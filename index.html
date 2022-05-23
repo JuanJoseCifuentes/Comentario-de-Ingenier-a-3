@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.ico">
+    <title>Ingeniería y Género</title>
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos -->
+    <link href="css/BaseDC.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Comentario de Ingeniería #3</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <!-- Example split danger button -->
+            <div class="btn-group">
+             <button type="button" class="btn btn-danger">Artículos relacionados</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" target="blank" href="https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920">Situación en España</a></li>
+            <li><a class="dropdown-item" target="blank" href="https://www.eltiempo.com/vida/educacion/falta-de-equidad-de-genero-en-carreras-de-ingenieria-628515#:~:text=Dentro%20de%20las%20ingenierías%2C%20hay,hombres%20frente%20a%20307%20mujeres.">Situación en Colombia</a></li>
+            <li><a class="dropdown-item" target="blank" href="https://www.emol.com/noticias/Nacional/2016/07/18/812706/Cuales-son-las-carreras-dominadas-por-los-hombres-y-las-mujeres-y-que-sueldos-reciben.html">Situación en Argentina</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" target="blank" href="https://www.census.gov/library/stories/2021/01/women-making-gains-in-stem-occupations-but-still-underrepresented.html">Situación en los EEUU</a></li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Juan José Cifuentes Cuellar
+      </span>
+    </div>
+  </div>
+</nav>
+
+    <div class="container h-100 mx-auto text-center">
+      <header class="my-5">
+        <div>
+          <h1 style="color: rgb(186, 10, 10);">Sobre la ingeniería, el género y los prejuicios.</h2>
+          <h4 style="color: rgb(127, 15, 15);">Comentario sobre el estado actual de la comunidad científica.</h4>
+          <br>
+        </div>
+      </header>
+    </div>
+
+      <hr class="bg-dark border-2 border-top border-dark">
+
+      <div class="pt-4 my-2 row justify-content-md-center"> 
+        <div class="col col-3 md-2 align-self-md-center"> <img src="images/logo_uni.png" alt="Escudo de la universidad" width="auto" height="300"> </div>
+        <div class="col col-6 ms-5 align-self-md-center"> 
+          <h3>Bienvenido a mi proyecto final.</h3><br>
+
+          <p>En está página web se encuentra mi trabajo realizado como proyecto final de la asignatura de Programación de Nuevas Tecnologías. Buscando contruir sobre las habilidades obtenidas durante el semestre, podrá observar que, además de demostrar un buen uso de HTML y la herramienta Bootstrap 5.0, también haré uso de gráficos diseñados mediante Chart.js.</p>
+
+          <p>Por supuesto, para el contenido de la página se desarrollará un ensayo acerca del estado actual del campo de la ingeniería y la clara falta de representación femenina que hay en el mismo, que corresponde al comentario de ingeniería de tercer corte.</p>
+
+          <p>Espero que lo disfrute.</p>
+          <br>
+        </div>
+      </div>
+
+      <hr class="bg-dark border-2 border-top border-dark">
+
+    <div class="text-center">
+        <img src="images/mujeresbg.jpg" alt="Mujeres ingenieras" width="800" height="auto">
+    </div>
+
+    <div class="container mt-5">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-intro-tab" data-bs-toggle="tab" data-bs-target="#nav-intro" type="button" role="tab" aria-controls="nav-intro" aria-selected="true" style="color: rgb(186, 10, 10);">¿Qué está pasando?</button>
+
+          <button class="nav-link" id="nav-inves-tab" data-bs-toggle="tab" data-bs-target="#nav-inves" type="button" role="tab" aria-controls="nav-inves" aria-selected="false" style="color: rgb(186, 10, 10);">¿Qué piensa la gente?</button>
+
+          <button class="nav-link" id="nav-dev-tab" data-bs-toggle="tab" data-bs-target="#nav-dev" type="button" role="tab" aria-controls="nav-dev" aria-selected="false" style="color: rgb(186, 10, 10);">¿Qué significa esto?</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active p-3" id="nav-intro" role="tabpanel" aria-labelledby="nav-intro-tab">
+          
+          <h3>¿Qué está pasando?</h3>
+
+          <img src="images/jobs.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Gráfica acerca de la participación de la mujer en trabajos STEM a lo largo de los años.">
+
+          <p>Para nadie es un secreto que a día de hoy, hay una gran falta de mujeres en la ingeniería. Como parte de una institución educativa de nivel superior, la realidad que vemos día tras día confirma que a pesar de la enorme cantidad de gente que estudia alguna ingeniería, el porcentaje de mujeres en estos programas es alarmantemente bajo. Este hecho plaga no solo el entorno educativo sino el laboral, y es innegable que la falta de formación de mujeres en áreas de ingeniería ha contribuído a generar un ciclo vicioso en el que el mercado tiene una grave falta de representación y a su vez se encarga de no dar los incentivos necesarios para revertir el problema.</p>
+
+          <p>Sin embargo, y aunque el ámbito de la ingeniería es uno de los ejemplos más exagerados de la problemática, sería deshonesto hablar de la disparidad de género en el área como un problema único de la ingeniería, o incluso de un termino que encompase mucho más, como podría serlo el área STEM. Dada la naturaleza de nuestra sociedad, no es ni extraño ni inesperado ver que en la mayoría de carreras profesionales se puede encontrar una tendencia hacia un género o hacia otro. ¿Quién no ha oído hablar alguna vez de como la pedagogía es un trabajo de mujeres? ¿Quién no asocia el trabajo de un astronauta con un hombre de manera inconsciente? Aún más interesante, ¿cuando se menciona la palabra "médico" para referirse a un profesional, por qué se piensa automáticamente en un hombre?</p>
+
+          <p>Este último ejemplo despierta mi curiosidad por dos principales motivos. Primero, es el ejemplo perfecto de como nuestra sociedad está llena de sesgos, aunque sean de manera incosciente, y como incluso una profesión en la que el género del profesional no es directamente específicado solo con su título, es clara una tendencia social a pensar uno de ellos. Y segundo, de entre todos los ejemplos mencionados, es el único que no tiene ninguna base estadística. ¿Le sorprendería saber que, de hecho, en el área de la medicina hay tan solo un 51% de hombres respecto al 49% restante de mujeres? Nuestra sociedad piensa, sin lugar a dudas, con el género en mente, y como tal, los <strong>roles de género</strong> permean no solo nuestra la dimensión social, sino la profesional y cultural a un nivel intrínseco. </p>
+
+          <p> No es una coincidencia que, históricamente, aquellos sectores con peor prestigio sean los mismos sectores que se consideran comúnmente femeninos. No es una coincidencia que, cuando se piensa en la ingeniería, se piensa en desafíos, en trabajo duro, en el orgullo inherente a ser exitoso en una labor que muchos otros han mistíficado como algo de una dificultad exagerada, de igual forma que no lo es que al pensar en gastronomía se piense en facilidad, en una pérdida de tiempo, en un trabajo de menor importancia. Lo peor de todo es que, de igual forma que nos hemos empeñado en asignar valor a labores según el género de aquellos que más los desempeñan, nos hemos asegurado de que las labores asociadas a un género se queden estrictamente con ese género y que la idea se perpetúe desde el principio en los más jóvenes. </p>
+
+          <p>Así, es claro que el problema que hoy nos ocupa es de dimensiones mucho más profundas que solo del ámbito de la ingeniería. Es difícil hablar de problemas tan estructurales de nuestra sociedad, por lo que para este comentario quiero centrar la discusión un poco más en las implicaciones que esto tiene puramente en el área STEM y en la manera en la que se podría generar un cambio positivo.</p>
+
+        </div>
+    
+        <div class="tab-pane fade p-3" id="nav-inves" role="tabpanel" aria-labelledby="nav-inves-tab">
+          
+         <h3>¿Que piensa la gente?</h3>
+
+         <center><img src="images/brecha ingenieria.png" alt="Datos acerca del porcentaje de hombres y mujeres en la ingeniería."></center> <br>
+
+         <p>Para fundamentar la discusión de la problemática en datos reales, se llevó a cabo una exploración sobre el tema en diversos artículos y estadísticas que, efectivamente, prueban la grave falta de mujeres en el sector. Los números son bastante uniformes cuando se comparan entre países, con desviaciones que, en general, resultan en un promedio muy parecido a los datos encontrados en Colombia. En los últimos 5 años, las mujeres han representado tan solo el 25% de los trabajos STEM en Colombia, y se reportan índices más bajos, del 19%, respecto a la representación femenina en áreas relacionadas a la computación. Incluso dentro del estigma que existe respecto a las mujeres y la ingeniería, parece ser que la informática ha pasado de ser una labor principalmente femenina a casi exclusivamente masculina, y son pocas las mujeres que actualmente deciden estudiarla. </p>
+
+         <p>Un detalle importante de notar, es que desde que la informática empezó a ser un área propia de los hombres, no se ha visto un aumento significativo de las mujeres en el campo, y los datos no indican que en e futuro cercano vayan a cambiar las tendencias. </p>
+
+         <p>Con una idea formada, quiero pasar ahora a la segunda labor de investigación que se llevó a cabo. Ya que los principales hechos, junto a sus causas y consecuencias se tienen más claro, quiero acercar la problemática desde aquel distante problema del que se puede leer en artículos, a la percepción que nosotros mismos, estudiantes de ingeniería, tenemos sobre el tema. Para ello, se desarrolló una breve encuesta en la herramienta gratuita KoBo Toolbox en la que se esperaba medir, entre otras cosas, la perspectiva que se tiene acerca del problema, de sus causas, de lo que debería hacerse al respecto y, por supuesto, una breve comparación a la realidad personal de los encuestados.</p>
+
+        <p>La encuesta en cuestión es la que se encuentra a continuación:</p>
+        <center><iframe src=https://ee.kobotoolbox.org/i/xpnWFQtT width="1000" height="600"></iframe></center> <br>    
+        <p class="lead text-center">Algunos de los datos más interesantes recogidos se encuentran a continuación:</p> <br>
+                 
+        <div class="container">
+          <div class="row align-items-center">
+            <p class="col lead col-6 text-center"> <strong>Relevancia dada a diferentes factores según su peso como causas de baja participación femenina en la ingeniería.</strong> <canvas id="Mi1Gr" width="400" height="300"> </canvas> </p>
+        
+            <p class="col col-1"></p>
+
+            <p class="col col-4"> La primera tabla se centra en la percepción que tienen los encuestados sobre los motivos que pueden haber causado el problema que nos ocupa. Como se puede ver, en general la gente no piensa que la falta de capacidades sea un factor decisivo, puntuando un valor por debajo del 1, y se atribuye mayor peso a los estereotipos. En cierto modo, los estereotipos de género son quienes generan, de forma indirecta, que los demás factores se manifiesten, por lo que tiene sentido que sea el factor más contribuyente. </p>
+          </div>
+
+          <br><br>
+
+          <div class="row align-items-center">
+            <p class="col col-4 text-end"> En cuanto a las formas de incentivar la participación femenina (cosa que un 86% de los encuestados concuerda, es importante hacer), la mejor opción es normalizar y visibilizar a la mujer en el campo mediante esfuerzos sociales. Como lo dice Ricardo Pérez en su artículo sobre el tema, los niños y niñas de las nuevas generaciones crecen rodeados por juguetes que parecen decirles que profesiones están bien para ellos, y constantemente ven esas mismas ideas confirmadas por la falta de representación de cualquiera de los géneros en campos específicos. Cambiar la manera en la que presentamos profesiones desde un primer momento, ya sea desde el hogar o la escuela, podría ayudar mucho a diversificar todos los campos laborales. </p>
+
+            <p class="col col-1"></p>
+
+            <p class="col col-6 text-center lead"> <strong>Medidas más populares para incentivar la participación femenina en la ingeniería.</strong> <canvas id="Mi2Gr" width="360" height="360"> </canvas> </p>
+          </div>
+
+          <br><br>
+
+          <div class="row align-items-center">
+
+            <p class="col col-6 text-center lead"> <strong>Número de mujeres en áreas STEM que conocen los encuestados.</strong> <canvas id="Mi3Gr" width="250" height="250"> </canvas> </p>
+
+            <p class="col col-1"></p>
+
+            <p class="col col-4"> Para finalizar, podemos comparar todos los datos vistos hasta ahora con la realidad personal de los encuestados. Efectivamente, podemos ver que la gran mayoría de ellos conoce 3 o menos mujeres que sean profesionales o se estén formando en campos STEM (fuera de la universidad, claramente). Es sin embargo sorprendente para mí que el 20% de los encuestados conzocan a más de 15 mujeres en el área, y lo considero prueba de que, incluso cuando las mujeres pueden formar parte de la comunidad, su trabajo es, de cierta forma, invisibilizado para el público general. </p>
+            
+          </div>
+        
+          <br>
+
+          <p>Creo que es importnte mencionar que, a pesar de que se preguntó el género del encuestado para comparar posibles sesgos implicitos en no vivir la problemática de primera mano, no hubo ninguna distinción discernible en cuanto al entendimiento de la problemática, sus causas y las maneras en las que puede fomentarse el cambio.</p>
+
+          <p>Ahora bien, con toda esta información me gustaría discuitr un poco más acerca de lo que se puede hacer para integrar a la mujer en la ingeniería y el porqué es siquiera importante.</p>
+
+        </div>
+      </div>
+      
+        <div class="tab-pane fade p-3" id="nav-dev" role="tabpanel" aria-labelledby="nav-dev-tab">
+          
+          <h3>¿Qué significa esto?</h3>
+
+          <p>Bueno, ahora que se entiende mucho mejor el problema a profundidad, me gustaría hacer una pregunta. ¿Por qué importa? ¿Por qué importa que haya una baja representación femenina si, al final del día, el trabajo de ingeniería se sigue haciendo?</p>
+
+          <p>Para mí, la respuesta siempre ha sido un simple hecho, y es la falta de visión que conlleva la disparidad. Las personas son, desde luego, libres de escoger lo que quieran para hacer con sus vidas, pero sin embargo, eso no quita que, entre más diversidad haya en un espacio, en especial uno laboral, habrán, en general, mejores resultados. No me refiero solo a la calidad humana de una empresa, que desde luego es importante y se ve fomentada por la diversidad de sus propios empleados, sino a nivel estructural, a nivel usuario, a nivel diseño, donde tener la mayor cantidad de mentes, de la mayor cantidad de sitios diferentes, con las historias más únicas posibles, asegura una visión mucho más global para enfrentar cualquier problema. </p>
+
+          <p>Como ingenieros, esto es especialmente cierto para nuestros campos. La ingeniería es una de las áreas que más afecta la calidad de vida de las personas en una sociedad, y es nuestro constante deber tener en mente al usuario, a aquel por quién nos dedicamos a hacer lo que hacemos. ¿Cómo se puede esperar que un ingeniero afronte correctamente un reto técnico si no conoce a profundidad los objetivos que debería priorizar y las herramientas que puede usar para ello? Puede parecer un ejemplo algo disconexo, pero la realidad es exactamente esta. Cuando dedicamos nuestro tiempo a diseñar soluciones para las personas, es imperativo que consigamos entender a la mayor cantidad de individuos posibles a fin de conseguir un producto colectivo, que sirva de igual forma para mejorar la vida de todo el que lo use. </p>
+
+          <img src="images/cientificas.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Múltiples mujeres cientificas">
+          <p>Es por esto que es trágico que en las carreras STEM la mujer tenga un rol tan diminuto. Cuando, como sociedad, no permitimos a un grupo que representa al 50% de la población mundial entrar a nuestras mesas de diseño, a nuestras investigaciones, a nuestras juntas directivas, lo que hacemos es asegurar que parte de la población que debería ser beneficiada por nuestra labor sea excluída. </p>
+
+          <p>Mientras enseñemos a nuestros niños que deben escoger una progesión sobre otra solo por su género, nos aseguraremos de dividir la brecha aún más. Mientras estemos contentos con permitir que el talento de millones de niños se vea desperdiciado porque la sociedad los juzagará si no es lo que socialmente se espere de ellos, entonces nos perderemos de todos los descubrimientos que habrían sido posibles de haber permitido a cada quien desempeñarse en lo que más le habría gustado de vivir en un mundo sin prejucios. La ingeniería, y el progreso mismo, son los principales afectados de negarle a las mujeres un puesto en su desempeño, y es por esto que debería preocuparnos su baja participación. </p>
+
+          <p>Y aún con todo esto dicho, ¿qué hay realmente para hacer? La actualidad parece fatalista, y el cambio casi imposible, pero no lo es. Debemos empezar por ser conscientes del problema. Solo cambiando nuestras realidades personales se puede conseguir cambiar la sociedad entera. Hay que rechazar la ideas ya viejas de que la predominancia masculina se debe a que somos capaces de algo de lo que las mujeres no son, y aceptar a mujeres en posiciones de poder convencionales. Si promovemos la verdadera igualdad una vez seamos profesionales en nuestros campos, entonces podremos empezar a ver el cambio, y contribuiremos positivamente a conseguir la paridad de género en la ingeniería. </p>
+
+          <p class="lead">Muchas gracias por leer.</p>
+
+        </div> 
+      </div>
+    </div>
+
+    <hr class="bg-danger border-2 border-top border-dark"> <br>
+
+    <center><div class="accordion col-8" id="accordionExample" style="background-color:rgb(127, 15, 15);;">
+    <h2 style="color: white;">Información extra:</h2>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Referencias.
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>[1]</strong> Castillo, Ricardo Pérez del. “¿Por Qué Las Niñas No Quieren Ser Informáticas?” The Conversation, <a href="https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920" target="blank">https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920</a> <br>
+          <strong>[2]</strong> Tiempo, Casa Editorial El. “Falta de equidad de género en ingeniería: pocas mujeres la estudian.” El Tiempo, 28 Oct. 2021, <a href="https://www.eltiempo.com/vida/educacion/falta-de-equidad-de-genero-en-carreras-de-ingenieria-628515." target="blank">https://www.eltiempo.com/vida/educacion/falta-de-equidad-de-genero-en-carreras-de-ingenieria-628515.</a> <br>
+          <strong>[3]</strong> S.A.P, El Mercurio. “¿Cuáles son las carreras dominadas por los hombres y las mujeres y qué sueldos reciben? | Emol.com.” Emol, 18 July 2016, <a href="https://www2.deloitte.com/us/en/insights/focus/human-capital-trends.html.https://www.emol.com/noticias/Nacional/2016/07/18/812706/Cuales-son-las-carreras-dominadas-por-los-hombres-y-las-mujeres-y-que-sueldos-reciben.html." target="blank">https://www.emol.com/noticias/Nacional/2016/07/18/812706/Cuales-son-las-carreras-dominadas-por-los-hombres-y-las-mujeres-y-que-sueldos-reciben.html.</a> <br>
+          <strong>[4]</strong> Elección de carreras universitarias con perspectiva de género, Perú 2017, Nancy Guillermina Veramendi-Villavicencios,
+          pp. 32-41, Revista entorno, diciembre 2018, número 66, ISSN: 2218-3345 <br>
+          <strong>[5]</strong> UNESCO. “Más Mujeres En Ciencia, Tecnología, Ingeniería y Matemáticas Mejoraría El Desarrollo Económico de La Región.” UNESCO, 28 Sept. 2020, <a href="https://es.unesco.org/news/mas-mujeres-ciencia-tecnologia-ingenieria-y-matematicas-mejoraria-desarrollo-economico-region." target="blank">https://es.unesco.org/news/mas-mujeres-ciencia-tecnologia-ingenieria-y-matematicas-mejoraria-desarrollo-economico-region.</a> <br>
+          <strong>[6]</strong> Bureau, US Census. “Women Are Nearly Half of U.S. Workforce but Only 27% of STEM Workers.” Census.Gov, <a href="https://www.census.gov/library/stories/2021/01/women-making-gains-in-stem-occupations-but-still-underrepresented.html." target="blank">https://www.census.gov/library/stories/2021/01/women-making-gains-in-stem-occupations-but-still-underrepresented.html.</a> <br>  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Datos personales.
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Nombre:</strong> Juan José Cifuentes Cuellar. <br>
+          <strong>ID:</strong> 0000244341. <br>
+          <strong>Nombre del profesor:</strong> Juan Pablo Franco Rubio. <br>
+          <strong>Institución:</strong> Universidad de la Sabana. <br>
+          <strong>Materia:</strong> Programación de Nuevas Tecnologías. <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Material consultado para la programación de la página.
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Sobre HTML:</strong> <a href="https://www.w3schools.com/html/default.asp" target="blank"> Guía de tags y opciones de HTML. </a> <br>
+          <strong>Sobre Bootstrap:</strong> <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="blank"> Guía de tags y opciones de Bootstrap 5. </a> <br>
+          <strong>Sobre ChartJS:</strong> <a href="https://www.chartjs.org/docs/latest/general/colors.html" target="blank"> Guía de gráficas y tags de ChartJS. </a><br>
+          <strong>KoBo Toolbox:</strong> <a href="https://kf.kobotoolbox.org/#/forms" target="blank"> Página principal de KoBo Toolbox. </a><br>
+          <strong>Ayudas extra:</strong> <a href="https://www.geeksforgeeks.org" target="blank"> Página de GeeksforGeeks. </a> <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</center> <br>
+
+
+    <section class="bg-dark col-12" style="color:white;">
+      <div class="row">
+        <p class="m-0 py-3 pe-5 text-end">
+          Universidad de la Sabana - 2022-1.
+        </p>
+      </div>
+    </section>
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <script>
+    var ctx=document.getElementById("Mi1Gr").getContext("2d");
+    var MiPGr=new Chart(ctx,
+    {
+        type:"bar",
+        data:
+        {
+          labels:['Capacidades','Oportunidades','Interés','Figuras','Estereotipos','Discriminación'],
+          datasets:
+          [{
+            barThickness: 40,
+              label:'Valor de Importancia',
+                  data:[0.8,2.53,2.93,3.13,4.06,3.46],
+                  backgroundColor:
+                  [
+                      'rgb(68,138,74,0.7)',
+                      'rgb(65,102,142,0.7)',
+                      'rgb(195,116,77,0.7)',
+                      'rgb(139,83,185,0.7)',
+                      'rgb(189,76,76,0.7)',
+                      'rgb(225,232,83,0.7)'
+                  ],
+                  borderColor: 
+                  [
+                    'rgb(17,52,20)',
+                    'rgb(19,49,81)',
+                    'rgb(149,69,30)',
+                    'rgb(75,42,102)',
+                    'rgb(150,32,32)',
+                    'rgb(184,193,27)'
+                  ],
+                  borderWidth: 2
+          }]
+        },
+        options:
+        {
+          scales:
+          {
+            yAxes:
+            [{
+              ticks:
+              {
+                beginAtZero:true
+              }
+            }]
+        }}
+    });
+
+    var ctx=document.getElementById("Mi2Gr").getContext("2d");
+    var MiSGr=new Chart(ctx,
+    {
+        type:"doughnut",
+        data:
+        {
+          labels:['Normalizar mujeres en la profesión','Promover la carrera en colegios','Luchar contra roles de género','Incentivos económicos'],
+          datasets:
+          [{
+              label:'Areas',
+              data:[13,7,6,4],
+              backgroundColor:
+              [
+                  'rgb(189,76,76,0.7)',
+                  'rgb(65,102,142,0.7)',
+                  'rgb(195,116,77,0.7)',
+                  'rgb(139,83,185,0.7)'
+              ],
+              borderColor: 
+              [
+                'rgb(150,32,32)',
+                'rgb(19,49,81)',
+                'rgb(149,69,30)',
+                'rgb(75,42,102)' 
+              ],
+              borderWidth: 3
+          }]
+        },
+    });
+
+    var ctx=document.getElementById("Mi3Gr").getContext("2d");
+    var MiSGr=new Chart(ctx,
+    {
+        type:"polarArea",
+        data:
+        {
+          labels:['0-3','4-7','15+'],
+          datasets:
+          [{
+              label:'Areas',
+              data:[8,4,3],
+              backgroundColor:
+              [
+                  'rgb(68,138,74,0.7)',
+                  'rgb(189,76,76,0.7)',
+                  'rgb(225,232,83,0.7)'
+              ],
+              borderColor: 
+              [
+                'rgb(17,52,20)',
+                'rgb(150,32,32)',
+                'rgb(184,193,27)'
+              ],
+              borderWidth: 3
+          }]
+        },
+    });
+  </script>
+
+</html>
